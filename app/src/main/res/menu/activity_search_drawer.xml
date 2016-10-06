@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_action_search_white"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_action_favorite_outline"
+            android:title="Saved Searches" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"/>
+    </group>
+
+
+
+</menu>

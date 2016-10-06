@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout_post_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        xmlns:adroid="http://schemas.android.com/apk/res/android"
+        adroid:layout_width="match_parent"
+        adroid:layout_height="match_parent"
+        adroid:background="@android:color/white">
+
+        <LinearLayout
+            xmlns:adroid="http://schemas.android.com/apk/res/android"
+            adroid:layout_width="match_parent"
+            adroid:layout_height="match_parent"
+            adroid:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/required_fields"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="italic"/>
+
+            <TextView
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:text="@string/post_identifier"
+                adroid:layout_marginTop="20dp"
+                adroid:layout_marginLeft="20dp"
+                adroid:textStyle="bold"/>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_id"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/post_id"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="20dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/post_id"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:text="@string/rental_status"
+                adroid:layout_marginTop="20dp"
+                adroid:layout_marginLeft="20dp"
+                adroid:textStyle="bold"/>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <RadioGroup
+                    adroid:id="@+id/radio_status"
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp">
+
+                    <RadioButton
+                        adroid:id="@+id/radio_button_forrent"
+                        adroid:layout_width="wrap_content"
+                        adroid:layout_height="wrap_content"
+                        adroid:text="@string/for_rent"
+                        adroid:checked="true"/>
+
+                    <RadioButton
+                        adroid:id="@+id/radio_button_rented"
+                        adroid:layout_width="wrap_content"
+                        adroid:layout_height="wrap_content"
+                        adroid:text="@string/rented"/>
+
+                    <RadioButton
+                        adroid:id="@+id/radio_button_cancelled"
+                        adroid:layout_width="wrap_content"
+                        adroid:layout_height="wrap_content"
+                        adroid:text="@string/cancelled"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:text="@string/address"
+                adroid:layout_marginTop="20dp"
+                adroid:layout_marginLeft="20dp"
+                adroid:textStyle="bold"/>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_street"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/street"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="20dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/street"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_city"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/city"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="32dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/city"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_state"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/state"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="23dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/state"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_zip"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/zip"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="35dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/zip"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:text="@string/property_type"
+                adroid:layout_marginTop="20dp"
+                adroid:layout_marginLeft="20dp"
+                adroid:textStyle="bold"/>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_type"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/type"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="25dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/type_hint"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:text="@string/property_size"
+                adroid:layout_marginTop="20dp"
+                adroid:layout_marginLeft="20dp"
+                adroid:textStyle="bold"/>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_rooms"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/rooms"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="10dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/rooms"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_baths"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/baths"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="18dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/baths"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_sqft"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/sqft"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="28dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/sqft"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:text="@string/monthly_rent"
+                adroid:layout_marginTop="20dp"
+                adroid:layout_marginLeft="20dp"
+                adroid:textStyle="bold"/>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_rent"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/rent"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="12dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/rent"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:text="@string/contact_info"
+                adroid:layout_marginTop="20dp"
+                adroid:layout_marginLeft="20dp"
+                adroid:textStyle="bold"/>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/phone"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/phone"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="12dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/phone"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/new_post_email"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/email"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="16dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/email"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:text="@string/description"
+                adroid:layout_marginTop="20dp"
+                adroid:layout_marginLeft="20dp"
+                adroid:textStyle="bold"/>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/desc"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <EditText
+                    adroid:id="@+id/description"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="18dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/description"
+                    adroid:lines="5"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:text="@string/photos"
+                adroid:layout_marginTop="20dp"
+                adroid:layout_marginLeft="20dp"
+                adroid:textStyle="bold"/>
+
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal">
+
+                <TextView
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:text="@string/photos"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="40dp"
+                    />
+
+                <ImageView
+                    adroid:id="@+id/photo"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="150dp"
+                    adroid:layout_marginTop="10dp"
+                    adroid:layout_marginLeft="6dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:hint="@string/photos"
+                    adroid:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="horizontal"
+                adroid:layout_gravity="right">
+
+                <ImageButton
+                    adroid:id="@+id/select_button"
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginRight="20dp"
+                    adroid:src="@drawable/select_button"
+                    adroid:background="@android:color/white"
+                    />
+
+                <ImageButton
+                    adroid:id="@+id/reset_button"
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_marginRight="20dp"
+                    adroid:src="@drawable/reset_button"
+                    adroid:background="@android:color/white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:layout_gravity="center_horizontal">
+
+                <ImageButton
+                    adroid:id="@+id/save_button"
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_gravity="bottom"
+                    adroid:layout_marginTop="30dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:src="@drawable/ic_save"
+                    adroid:background="@android:color/white"
+                    adroid:onClick="pickPhoto"
+                    />
+
+                <ImageButton
+                    adroid:id="@+id/delete_button"
+                    adroid:layout_width="wrap_content"
+                    adroid:layout_height="wrap_content"
+                    adroid:layout_gravity="bottom"
+                    adroid:layout_marginTop="30dp"
+                    adroid:layout_marginRight="20dp"
+                    adroid:src="@drawable/ic_delete"
+                    adroid:background="@android:color/white"
+                    adroid:onClick="pickPhoto"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Side navigation drawer UI -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view_new_post"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer"
+        />
+
+</android.support.v4.widget.DrawerLayout>

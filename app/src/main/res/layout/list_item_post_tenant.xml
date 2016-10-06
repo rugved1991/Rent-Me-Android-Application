@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:background="@android:color/white">
+
+
+    <ImageView
+        android:id="@+id/list_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        tools:text="Image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/list_post_image"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/list_post_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text="Post ID"/>
+
+            <TextView
+                android:id="@+id/list_post_left_paran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text="("/>
+
+            <TextView
+                android:id="@+id/list_post_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text="$"/>
+
+            <TextView
+                android:id="@+id/list_post_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text="10,000"/>
+
+            <TextView
+                android:id="@+id/list_post_right_param"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text=")"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/list_post_str_rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text="Room: "/>
+
+            <TextView
+                android:id="@+id/list_post_rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text="#"/>
+
+            <TextView
+                android:id="@+id/list_post_comma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text=","/>
+
+            <TextView
+                android:id="@+id/list_post_str_baths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text="Bath: "/>
+
+            <TextView
+                android:id="@+id/list_post_baths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="2dp"
+                tools:text="#"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_post_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                tools:text="Address"/>
+
+            <TextView
+                android:id="@+id/list_post_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                tools:text="City"/>
+
+            <TextView
+                android:id="@+id/list_post_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                tools:text="State"/>
+
+            <TextView
+                android:id="@+id/list_post_zip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                tools:text="Zip"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

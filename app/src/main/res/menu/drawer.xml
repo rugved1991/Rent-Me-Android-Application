@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="false"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/favorite"
+            android:checked="false"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/favorite" />
+
+        <item
+            android:id="@+id/saved_searches"
+            android:checked="false"
+            android:icon="@drawable/ic_save_black_24dp"
+            android:title="@string/saved_searches" />
+
+        <item
+            android:id="@+id/post"
+            android:checked="false"
+            android:icon="@drawable/ic_cloud_upload_black_24dp"
+            android:title="@string/post" />
+
+
+        <item
+            android:id="@+id/manage_post"
+            android:checked="false"
+            android:icon="@drawable/ic_mode_edit_black_24dp"
+            android:title="@string/manage_post" />
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/ic_close_black_24dp"
+            android:title="@string/logout" />
+
+    </group>
+</menu>
+

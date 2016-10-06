@@ -1,0 +1,79 @@
+
+<resources>
+    <string name="app_name">RentMe</string>
+    <string name="facebook_app_id">1567156340248990</string>
+    <string name="action_settings">LogOut</string>
+    <string name="post_identifier">Post Title</string>
+    <string name="post_id">Title</string>
+    <string name="new_post_id">Title*</string>
+    <string name="address">Address</string>
+    <string name="street">Street</string>
+    <string name="new_post_street">Street*</string>
+    <string name="city">City</string>
+    <string name="new_post_city">City*</string>
+    <string name="state">State</string>
+    <string name="new_post_state">State*</string>
+    <string name="zip">Zip</string>
+    <string name="new_post_zip">Zip*</string>
+    <string name="property_type">Property Type</string>
+    <string name="type">Type</string>
+    <string name="new_post_type">Type*</string>
+    <string name="type_hint">House/Condo/Apartment, etc</string>
+    <string name="property_size">Property Size</string>
+    <string name="rooms">Rooms</string>
+    <string name="new_post_rooms">Rooms*</string>
+    <string name="baths">Baths</string>
+    <string name="new_post_baths">Baths*</string>
+    <string name="sqft">sqft</string>
+    <string name="new_post_sqft">sqft*</string>
+    <string name="monthly_rent">Monthy Rent</string>
+    <string name="rent">Rent $</string>
+    <string name="new_post_rent">Rent* $</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="new_post_email">Email*</string>
+    <string name="description">Description</string>
+    <string name="desc">Desc</string>
+    <string name="photos">Photos</string>
+    <string name="num_viewed">Number of times viewed</string>
+    <string name="viewed">Viewed</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="rental_status">Rental Status</string>
+    <string name="for_rent">For Rent</string>
+    <string name="rented">Rented</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="search_label">Search</string>
+    <string name="search_hint">Search Location, Keyword, Property Type or Rental Price range</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="favorites">Favorites</string>
+    <string name="keyword">Keyword</string>
+    <string name="location">Location</string>
+    <string name="propType">Property Type</string>
+    <string name="rentRange">Rent Range</string>
+    <string name="required_fields">* Required Fields</string>
+    <string-array name="navi_drawer_items_array">
+        <item>Home</item>
+        <item>Favorites</item>
+        <item>Saved Searches</item>
+        <item>Post</item>
+        <item>Manage Posts</item>
+        <item>Log Out</item>
+    </string-array>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="saved_searches">Saved Searches</string>
+    <string name="post">Post</string>
+    <string name="manage_post">Manage Post</string>
+    <string name="logout">Logout</string>
+     <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token...</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+
+</resources>
+
