@@ -5,3 +5,4 @@ This is a Android application which provides following functionality:
 2. Post rental home listing as a landlord.
 3. Mark houses as favorites.
 4. Save searches as alerts for future updates.
+
